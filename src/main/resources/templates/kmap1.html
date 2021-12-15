@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>KAKAO MAP1</title>
+</head>
+
+<body>
+<!--지도를 담을 영역 -->
+<div id="map" style="width: 60%; height: 450px;"></div>
+</body>
+<!-- 실제 지도를 그리는 자바스트립 API를 불러오기-->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=132170f31bf0d3141e8df88c287999d8"></script>
+<!-- 지도를 띄우는 코드 작성-->
+<script>
+    let container = document.getElementById('map'); //지도를 담을 영역
+    let option = {
+        center : new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level : 3 // 지도의 레벨 (확대, 축소, 축소)
+    } // 지도를 생성할 때 필요한 기본 옵션
+
+    let map = new kakao.maps.Map(container, option);
+    // 위도(latitude), 경도 (longitude)
+</script>
+
+</html>
